@@ -1,9 +1,0 @@
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/1.6/Assemblies/SmartThrottle.dll
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/1.6/Assemblies/SmartThrottle.pdb
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.csproj.AssemblyReference.cache
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.GeneratedMSBuildEditorConfig.editorconfig
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.AssemblyInfoInputs.cache
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.AssemblyInfo.cs
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.csproj.CoreCompileInputs.cache
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.dll
-/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/obj/Debug/SmartThrottle.pdb

@@ -1,0 +1,7 @@
+# Build output
+Source/obj/
+Source/bin/
+
+# Compiled DLL and debug symbols
+1.6/Assemblies/SmartThrottle.dll
+1.6/Assemblies/SmartThrottle.pdb

@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = RimatomicsSmartThrottle
-build_property.ProjectDir = /games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
