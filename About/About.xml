@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Rimatomics SmartThrottle</name>
+  <author>petoovee</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <packageId>petoovee.RimatomicsSmartThrottle</packageId>
+  <description>Replaces the Rimatomics AutoThrottle logic with a smarter implementation.</description>
+  <modDependencies>
+    <li>
+      <packageId>Dubwise.Rimatomics</packageId>
+      <displayName>Dubs Rimatomics</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Dubwise.Rimatomics</li>
+  </loadAfter>
+</ModMetaData>

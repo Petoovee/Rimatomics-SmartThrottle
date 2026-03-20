@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>SmartThrottle</AssemblyName>
+    <RootNamespace>RimatomicsSmartThrottle</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <!-- Output directly into the mod's 1.6 Assemblies folder -->
+    <OutputPath>../1.6/Assemblies</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <!-- Don't copy referenced DLLs next to our output -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RimWorld core -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>/games/SteamLibrary/steamapps/common/RimWorld/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/games/SteamLibrary/steamapps/common/RimWorld/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony (shipped with Rimatomics) -->
+    <Reference Include="0Harmony">
+      <HintPath>/games/SteamLibrary/steamapps/workshop/content/294100/1127530465/1.6/Assemblies/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Rimatomics itself -->
+    <Reference Include="Rimatomics">
+      <HintPath>/games/SteamLibrary/steamapps/workshop/content/294100/1127530465/1.6/Assemblies/Rimatomics.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

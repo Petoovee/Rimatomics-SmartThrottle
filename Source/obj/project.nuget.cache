@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TsVD+BulPVU=",
+  "success": true,
+  "projectFilePath": "/games/SteamLibrary/steamapps/common/RimWorld/Mods/Rimatomics SmartThrottle/Source/SmartThrottle.csproj",
+  "expectedPackageFiles": [
+    "/home/petoovee/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/petoovee/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
