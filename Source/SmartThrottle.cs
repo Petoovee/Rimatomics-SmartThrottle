@@ -121,6 +121,7 @@ namespace RimatomicsSmartThrottle
             float ticksToFill = netWdPerTick > 0f ? batteryMargin / netWdPerTick : float.PositiveInfinity;
 
             float rodDelta;
+            float rodTarget = __instance.CoreLink.TargetControlRodTo;
             if (__instance.CoreLink.overheating > 0f)
             {
                 rodDelta = -0.02f;
@@ -135,11 +136,24 @@ namespace RimatomicsSmartThrottle
             else if (netWatts > 5000f) rodDelta = -0.0005f;
             else rodDelta = 0f;
 
+            // If control rods are really close to the target and we are not trying to change them, snap to target to prevent jitter
             if (rodDelta == 0f)
-                __instance.CoreLink.TargetControlRodTo = __instance.CoreLink.TargetControlRodPosition;
+            {
+                float rodDiff = Math.Abs(rodTarget - __instance.CoreLink.TargetControlRodPosition);
+                if (rodDiff < 0.0001f)
+                    rodTarget = __instance.CoreLink.TargetControlRodPosition;
+            }
             else
-                __instance.CoreLink.TargetControlRodTo =
-                    Mathf.Clamp01(__instance.CoreLink.TargetControlRodTo + rodDelta);
+            {
+                rodTarget += rodDelta;
+            }
+
+            // Unless we are overheating, never reduce control rods below 1% to prevent shutdown
+            if (__instance.CoreLink.overheating <= 0f)
+                rodTarget = Mathf.Max(rodTarget, 0.01f);
+
+            __instance.CoreLink.TargetControlRodTo =
+                    Mathf.Clamp01(rodTarget);
 
             return false;
         }
